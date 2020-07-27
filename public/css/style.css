@@ -1,0 +1,21 @@
+h1 {
+    color: red;
+}
+
+.test{
+    color: yellow;
+}
+
+.card{
+    margin-bottom: 10px;
+}
+
+.cards-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer{
+    text-align: center;
+}

@@ -1,0 +1,23 @@
+{% extends "base.twig" %}
+
+    {% block body %}
+    <div class="container">
+        <h2>Liste des posts:</h2>
+    </div>
+
+    <div class="container cards-content">
+        {% for post in postsList %}
+        <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+                <h5 class="card-title">{{post.title}}</h5>
+                <p class="card-text">{{post.body}}</p>
+                <a href='blog/'+{{post.id}} class="card-link">En savoir plus</a>
+            </div>
+           
+        </div>
+         {% endfor %}
+        
+    </div>
+
+ {% endblock %}
